@@ -1,0 +1,134 @@
+{
+  "languageObjects": [
+    {
+      "name": "JumpButton",
+      "ru": "Images/ui/joystick_Jump1(ru)",
+      "en": "Images/ui/joystick_Jump1(eng)"
+    },
+    {
+      "name": "SlideButton",
+      "ru": "Images/ui/joystick_slide1(ru)",
+      "en": "Images/ui/joystick_slide1(eng)"
+    },
+    {
+      "name": "StartText",
+      "ru": "Старт",
+      "en": "Start"
+    },
+    {
+      "name": "LeaderboardText",
+      "ru": "Доска лидеров",
+      "en": "Leaderboard"
+    },
+    {
+      "name": "SkinsText",
+      "ru": "Облики персонажей",
+      "en": "Character skins"
+    },
+    {
+      "name": "ToWebsiteText",
+      "ru": "Наш сайт",
+      "en": "Our website"
+    },
+    {
+      "name": "ContinueForMoneyText",
+      "ru": "Продолжить за деньги",
+      "en": "Continue for money"
+    },
+    {
+      "name": "ReturnToMainMenuText",
+      "ru": "Вернуться в главное меню",
+      "en": "Return to main menu"
+    },
+    {
+      "name": "StartForMoneyText",
+      "ru": "Начать автоплей до 1000 очков",
+      "en": "Start autoplay to 1000 score points"
+    },
+    {
+      "name": "StartAtZeroText",
+      "ru": "Начать играть с нуля",
+      "en": "Start at zero score points"
+    },
+    {
+      "name": "EnterPasswordText",
+      "ru": "Введите пароль доступа",
+      "en": "Enter access password"
+    },
+    {
+      "name": "PassPlaceholderText",
+      "ru": "Введите пароль",
+      "en": "Enter password"
+    },
+    {
+      "name": "SubmitText",
+      "ru": "Далее",
+      "en": "Submit"
+    },
+    {
+      "name": "ContinueAutoPlayText",
+      "ru": "Продолжить автоплей",
+      "en": "Continue autoplay"
+    },
+    {
+      "name": "ContinueUsuallyText",
+      "ru": "Продолжить в обычном режиме",
+      "en": "Continue in usual mode"
+    },
+    {
+      "name": "LanguageSettingText",
+      "ru": "Язык",
+      "en": "Language"
+    },
+    {
+      "name": "LanguageFlagButton",
+      "ru": "Images/ui/ico_Ru",
+      "en": "Images/ui/ico_Eng"
+    },
+    {
+      "name": "LogoChhn",
+      "ru": "Images/ui/board_AD_ad(ru)",
+      "en": "Images/ui/board_AD_ad(eng)"
+    },
+    {
+      "name": "Logo",
+      "ru": "Images/gameName1(Ru)",
+      "en": "Images/gameName1(Eng)"
+    },
+    {
+      "name": "ContinueText",
+      "ru": "Продолжить",
+      "en": "Continue"
+    },
+    {
+      "name": "PauseText",
+      "ru": "Пауза",
+      "en": "Pause"
+    },
+    {
+      "name": "FinishText",
+      "ru": "Финиш",
+      "en": "Finish"
+    },
+    {
+      "name": "ScoreText",
+      "ru": "Счет:",
+      "en": "Score:"
+    },
+    {
+      "name": "BoyText",
+      "ru": "Андрей",
+      "en": "Andrey"
+    },
+    {
+      "name": "GirlText",
+      "ru": "Оля",
+      "en": "Olya"
+    },
+    {
+      "name": "CatText",
+      "ru": "Котик",
+      "en": "Kitty"
+    }
+  ]
+}
