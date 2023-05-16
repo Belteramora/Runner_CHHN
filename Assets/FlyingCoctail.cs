@@ -7,34 +7,56 @@ public class FlyingCoctail : MonoBehaviour
     [SerializeField]
     private GameObject flyingCoctailPrefab;
 
+    private float handledTime = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         GameManager.GameResumed += StarterOn;
-        GameManager.GamePaused += StarterOff;
     }
 
     public void StarterOn()
     {
-		StartCoroutine(FlyRoutine());
+		StartCoroutine(FlyRoutine(30f, 0.1f));
 	}
 
-	public void StarterOff()
-	{
-		StopCoroutine(FlyRoutine());
-	}
-
-	private IEnumerator FlyRoutine()
+	private IEnumerator FlyRoutine(float sec, float step)
     {
-
-        while (GameManager.isGameActive ) 
+        Debug.Log("Started");
+        while (true) 
         {
-			yield return new WaitForSeconds(30f);
+            float temp_i = 0;
 
-            if(!GameManager.autoPlayed)
-			    Instantiate(flyingCoctailPrefab);
+            for (float i = 0; i < sec - handledTime; i += step)
+            {
+                if (GameManager.isGameActive)
+                    yield return new WaitForSeconds(step);
+                else
+                {
+                    Debug.Log("i = " + i + "; sec = " + sec  + "; sum time = " + (sec-handledTime));
+                    handledTime += i;
+                    Debug.Log("handled time = " + handledTime);
+                    break;
+                }
+
+                temp_i = i;
+            }
+
+            if(Mathf.Round(temp_i) == Mathf.Round(sec - handledTime))
+            {
+                Debug.Log("Spawn time " + (sec - handledTime) + " sec last been");
+                handledTime = 0;
+            }
+
+            if (handledTime != 0)
+            {
+                Debug.Log("Break loop");
+                break;
+            }
+
+            if (!GameManager.autoPlayed && GameManager.isGameActive)
+                Instantiate(flyingCoctailPrefab);
+
         }
-
-        yield return null;
     }
 }

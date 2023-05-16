@@ -20,8 +20,9 @@ public class PlayerController : MonoBehaviour
     private RigidbodyType2D savedType;
 
 	private bool ableDoubleJump = false;
+    private bool isInvincible = false;
 
-    [SerializeField]
+	[SerializeField]
     private Vector2 jumpForce;
     [SerializeField]
     private float groundCheckDistance;
@@ -124,16 +125,19 @@ public class PlayerController : MonoBehaviour
 
     public void BeDamaged()
     {
-        currentHP--;
-
-        animator.SetTrigger("beDamaged");
-
-        OnLoseHP(currentHP);
-
-        if(currentHP <= 0)
+        if (!isInvincible)
         {
-            animator.SetTrigger("death");
-            GameManager.GameOver(false);
+            currentHP--;
+
+            animator.SetTrigger("beDamaged");
+
+            OnLoseHP(currentHP);
+
+            if (currentHP <= 0)
+            {
+                animator.SetTrigger("death");
+                GameManager.GameOver(false);
+            }
         }
     }
 
@@ -150,7 +154,16 @@ public class PlayerController : MonoBehaviour
     {
 		rb2d.bodyType = RigidbodyType2D.Dynamic;
         flying = false;
-	}
 
-    
+        isInvincible = true;
+        Invoke("StopInvincible", 3f);
+    }
+
+    private void StopInvincible()
+    {
+        isInvincible = false;
+    }
+
+
+
 }
