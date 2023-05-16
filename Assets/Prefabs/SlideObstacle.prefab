@@ -238,7 +238,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.35461903, y: 2.8194566}
+  m_Offset: {x: 0.35461903, y: 2.5974834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.25}
@@ -249,7 +249,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.880228, y: 2.4920604}
+  m_Size: {x: 1.880228, y: 2.0481138}
   m_EdgeRadius: 0
 --- !u!114 &9123718162402971057
 MonoBehaviour:
@@ -264,5 +264,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinsTrailPrefab: {fileID: 637693272851356034, guid: 108443166ac7c704088e25934c4cd006, type: 3}
-  autoPlay: {fileID: 4757047155130757570}
   boundsSize: {x: 0, y: 0}
