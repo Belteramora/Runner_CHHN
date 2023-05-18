@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class StartSceneController : MonoBehaviour
 {
-
-    [SerializeField]
-    private string gameplaySceneName;
-
 	public void Awake()
 	{
 		if(LanguageChanger.changers != null)
@@ -38,11 +34,6 @@ public class StartSceneController : MonoBehaviour
 			changer.OnLanguageChanged();
 		}
 	}
-
-	public void OnStartPressed()
-	{ 
-        SceneManager.LoadScene(gameplaySceneName, LoadSceneMode.Single);
-    }
 
 	public void Update()
 	{

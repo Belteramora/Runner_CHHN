@@ -5,15 +5,23 @@ using DG.Tweening;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField]
+	private GameObject logo;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	[SerializeField]
+	private CanvasGroup menuScreen;
+
+
+	private void Start()
+	{
+		Sequence logoSeq = DOTween.Sequence();
+		logoSeq.Append(logo.transform.DOScale(1.2f, 0.5f).SetDelay(0.2f));
+		logoSeq.Append(logo.transform.DOScale(1f, 0.5f));
+		logoSeq.OnComplete(() =>
+		{
+			menuScreen.interactable = true;
+			menuScreen.blocksRaycasts = true;
+		});
+		logoSeq.Play();
+	}
 }

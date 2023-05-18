@@ -33,20 +33,15 @@ public class Leaderboard : MonoBehaviour
     {
 		leaderDataPath = Application.persistentDataPath + "/LeaderboardData.json";
 
-		Debug.Log(Application.persistentDataPath + "/LeaderboardData.json");
-
 		if (File.Exists(leaderDataPath))
 		{
-			Debug.Log("File exist, loading");
 			string jsonText = File.ReadAllText(leaderDataPath);
 			leaderData = JsonUtility.FromJson<LeaderData>(jsonText);
 
 			leaderData.data.ForEach(data => { Debug.Log("LEADER DATA " + data.time + data.score); });
-			Debug.Log("LEADER DATA TODAY" + leaderData.today);
 		}
 		else
 		{
-			Debug.Log("File not exist, creating");
 			StreamWriter stream = File.CreateText(leaderDataPath);
 			leaderData = new();
 			stream.Write(JsonUtility.ToJson(leaderData));
@@ -56,7 +51,6 @@ public class Leaderboard : MonoBehaviour
 
 		if (leaderData.today != DateTime.Today.ToLongDateString())
 		{
-			Debug.Log("Date not equal");
 			leaderData.data.Clear();
 			leaderData.today = DateTime.Today.ToLongDateString();
 		}
