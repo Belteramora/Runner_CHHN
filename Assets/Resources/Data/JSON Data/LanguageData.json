@@ -42,8 +42,8 @@
     },
     {
       "name": "StartForMoneyText",
-      "ru": "Начать автоплей до 1000 очков",
-      "en": "Start autoplay to 1000 score points"
+      "ru": "Начать автоплей до 500 очков",
+      "en": "Start autoplay to 500 score points"
     },
     {
       "name": "StartAtZeroText",
