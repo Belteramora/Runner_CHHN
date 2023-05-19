@@ -5,13 +5,12 @@ using DG.Tweening;
 
 public class Screen : MonoBehaviour
 {
-	protected 
-    private CanvasGroup canvasGroup;
+	private CanvasGroup canvasGroup;
 
     private float menuTrasitionDuration = 0.3f;
 
     [SerializeField]
-    private float topdownSlidePos;
+    private Vector2 movingPos;
 
 	private void Start()
 	{
@@ -21,9 +20,9 @@ public class Screen : MonoBehaviour
 	public void TransitTo(CanvasGroup toScreen)
     {
 		HideShowScreen(canvasGroup, 0);
-        AnimateMove(canvasGroup.transform as RectTransform, Vector2.zero, new Vector2(0, -topdownSlidePos));
+        AnimateMove(canvasGroup.transform as RectTransform, Vector2.zero, movingPos);
 		HideShowScreen(toScreen, 1);
-        AnimateMove(toScreen.transform as RectTransform, new Vector2(0, topdownSlidePos), Vector2.zero);
+        AnimateMove(toScreen.transform as RectTransform, -movingPos, Vector2.zero);
     }
 
 	protected void HideShowScreen(CanvasGroup screen, int hide)

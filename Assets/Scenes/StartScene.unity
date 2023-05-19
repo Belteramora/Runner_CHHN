@@ -520,7 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43d0488759aa99499e6ce5ebfb1a2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topdownSlidePos: -200
+  movingPos: {x: 0, y: -200}
 --- !u!1 &255662386
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,7 +3287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c5f69eb3598cf4c9bdc32f36402c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topdownSlidePos: 200
+  movingPos: {x: 0, y: 200}
   gameplaySceneName: GameplayScene
 --- !u!1 &1484389812
 GameObject:
@@ -3650,7 +3650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0a700706740224ea606d789deb0f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topdownSlidePos: -200
+  movingPos: {x: 0, y: -200}
 --- !u!1 &1576258084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,7 +4174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e965d1dca7e1fa4ebf2cb062a9cb280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topdownSlidePos: -200
+  movingPos: {x: 0, y: -200}
 --- !u!1 &1847719707
 GameObject:
   m_ObjectHideFlags: 0
