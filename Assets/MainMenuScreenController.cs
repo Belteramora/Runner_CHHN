@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenuScreenController : ScreenController
 {
 	[SerializeField]
 	private GameObject logo;
@@ -24,4 +25,5 @@ public class MainMenu : MonoBehaviour
 		});
 		logoSeq.Play();
 	}
+
 }
