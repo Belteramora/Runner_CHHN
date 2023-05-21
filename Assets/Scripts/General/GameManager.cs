@@ -10,7 +10,13 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager Instance;
 
-    public static GameData GameData { get; private set; }
+    [SerializeField]
+    private float scoreToAutoPlay;
+
+	[SerializeField]
+	private float scoreToUsualPlay;
+
+	public static GameData GameData { get; private set; }
 
     public static bool isGameActive = false;
     public static bool autoPlayed = false;
@@ -22,6 +28,8 @@ public class GameManager : MonoBehaviour
     public static event Action GameEnded;
     public static event Action<int> OnCoinsUpdate;
     public static event Action OnAutoPlayEnabled;
+
+
 
     public static SkinData CurrentSkinData { get; private set; }
 
@@ -64,11 +72,11 @@ public class GameManager : MonoBehaviour
     {
         currentScore += coinNomValue;
 
-        if (autoPlayed && currentScore >= 200)
+        if (autoPlayed && currentScore >= Instance.scoreToAutoPlay)
         {
 			GameOver(true);
 		}
-        else if(!autoPlayed && currentScore >= 1500)
+        else if(!autoPlayed && currentScore >= Instance.scoreToUsualPlay)
         {
             GameOver(true);
         }
