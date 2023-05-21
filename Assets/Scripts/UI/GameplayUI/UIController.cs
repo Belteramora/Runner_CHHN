@@ -21,7 +21,6 @@ public class UIController : MonoBehaviour
 
 	private void Awake()
 	{
-		GameManager.GameEnded += OnDeath;
 		PlayerController.OnLoseHP += OnLoseHP;
 
         HPContainer.HPContainerList = new List<HPContainer>();
@@ -37,12 +36,6 @@ public class UIController : MonoBehaviour
     public void AutoPlayOn()
     {
         GameManager.AutoPlay();
-    }
-
-    public void OnDeath(bool isWin)
-    {
-        GetComponent<Animator>().SetBool("IsWin", isWin);
-		GetComponent<Animator>().SetBool("IsDead", true);
     }
 
     public void OnExitButtonPressed()

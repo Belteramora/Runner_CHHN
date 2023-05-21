@@ -16,6 +16,9 @@ public class MoveableGround : IMoveable
 	[SerializeField]
 	private List<GameObject> obstaclePrefabs = new();
 
+	[SerializeField]
+	private GameObject winTriggerPrefab;
+
 	private List<Obstacle> obstacles = new();
 
 	public override void Setup(float moveSpeed, int indexInPool, float offsetY)
@@ -46,7 +49,7 @@ public class MoveableGround : IMoveable
 	{
 		ResetObstacles();
 
-		if(!PlayerController.flying)
+		if(!PlayerController.flying && !GameManager.endGame)
 			ChooseObstacle();		
 	}
 
@@ -76,5 +79,9 @@ public class MoveableGround : IMoveable
 		}
 	}
 
-	
+	public void SpawnWinTrigger()
+	{
+		Debug.Log("SPAWN TRIGGER");
+		Instantiate(winTriggerPrefab, transform);
+	}
 }

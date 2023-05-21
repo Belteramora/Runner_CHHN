@@ -1,0 +1,796 @@
+fileFormatVersion: 2
+guid: 907e9e00d7f900b4ebbe8ffeec8f02b2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LuckyBar_Door3_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972ceb33b224dcf48b9f859ebde15276
+      internalID: 2087099629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_1
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adccdfd3481cabd4f881e09e00acd63d
+      internalID: 1328896861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_2
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ba0d7c025b46f45b19f12d94d928f4
+      internalID: -2000527016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_3
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6d966b53b33194e8d42dacba07bacd
+      internalID: 2004216331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_4
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4bab979d978a74c81f93482fae1ac8
+      internalID: 1272823326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_5
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4280ab4a6b209a9408aa31cf16cd86c7
+      internalID: 697693011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_6
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb94c82258bf0458fb82bada67f84a
+      internalID: -2073668566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_7
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade93fc02e47f294caef881b6270a428
+      internalID: -695279414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_8
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 3471
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e3f0436b0afb34187d28e48bc561f4
+      internalID: 2008180453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0965e296712390a4d94bbbc93e299897
+      internalID: -1833565651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_10
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4b659aeea1b304295177b50935171d
+      internalID: -2067743681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_11
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc1895f0307fa344a13ed6fdda331df
+      internalID: -2058795491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_12
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f17a94a3fa4a34a8346f41c820f534
+      internalID: 1897645790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_13
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b22e50e67a4254dae163efdb310406
+      internalID: -4206744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_14
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d7d1c4fc905d84b91a6929e55e960a
+      internalID: -1728629878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_15
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a7eb058844feb4898bab1342ce58ae
+      internalID: 1783476381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_16
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089ff14069cbf4341b9732b093b09d41
+      internalID: 1694496858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_17
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 2846
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b9d829ac3a3a446a92a78fc2350ca2
+      internalID: 1687397651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58aef6e786ee9444b55b4bd74833fe3
+      internalID: -1205562074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_19
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c2a42023a247a43aa065f4151040ac
+      internalID: -497278547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_20
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c1e627ea5ec854db7002cae59bd743
+      internalID: -174532430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_21
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd69529176160442b7b91d91962050d
+      internalID: -947684540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_22
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91292f90eac690f40b141e5ee8c515d3
+      internalID: 1443979229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_23
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9115d91e028f647b0759bfe1e951d3
+      internalID: 946082832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_24
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637d03b3da729d54aa2403d9be8b746a
+      internalID: -2140647854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_25
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda71c72afcd5c840bf8ba9bb6ac3e90
+      internalID: -1344087705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_26
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 2221
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f92d6e668a3864d8a6d16870213f18
+      internalID: 1697031238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_27
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1596
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db91ef76c5137e4094d45f8a8d60ed8
+      internalID: 814183932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_28
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1596
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad89ee74237820c46bd9ef9913c8fe6d
+      internalID: 492613935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LuckyBar_Door3_29
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1596
+        width: 403
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fcacd20193b07498eb06049506581f
+      internalID: -1436399163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      LuckyBar_Door3_0: 2087099629
+      LuckyBar_Door3_1: 1328896861
+      LuckyBar_Door3_10: -2067743681
+      LuckyBar_Door3_11: -2058795491
+      LuckyBar_Door3_12: 1897645790
+      LuckyBar_Door3_13: -4206744
+      LuckyBar_Door3_14: -1728629878
+      LuckyBar_Door3_15: 1783476381
+      LuckyBar_Door3_16: 1694496858
+      LuckyBar_Door3_17: 1687397651
+      LuckyBar_Door3_18: -1205562074
+      LuckyBar_Door3_19: -497278547
+      LuckyBar_Door3_2: -2000527016
+      LuckyBar_Door3_20: -174532430
+      LuckyBar_Door3_21: -947684540
+      LuckyBar_Door3_22: 1443979229
+      LuckyBar_Door3_23: 946082832
+      LuckyBar_Door3_24: -2140647854
+      LuckyBar_Door3_25: -1344087705
+      LuckyBar_Door3_26: 1697031238
+      LuckyBar_Door3_27: 814183932
+      LuckyBar_Door3_28: 492613935
+      LuckyBar_Door3_29: -1436399163
+      LuckyBar_Door3_3: 2004216331
+      LuckyBar_Door3_4: 1272823326
+      LuckyBar_Door3_5: 697693011
+      LuckyBar_Door3_6: -2073668566
+      LuckyBar_Door3_7: -695279414
+      LuckyBar_Door3_8: 2008180453
+      LuckyBar_Door3_9: -1833565651
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

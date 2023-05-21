@@ -14,17 +14,18 @@ public class GameManager : MonoBehaviour
 
     public static bool isGameActive = false;
     public static bool autoPlayed = false;
-    public static event Action GameSetup;
+    public static bool endGame = false;
+    public static event Action GameWinned;
+	public static event Action GameSetup;
     public static event Action GamePaused;
     public static event Action GameResumed;
-    public static event Action<bool> GameEnded;
+    public static event Action GameEnded;
     public static event Action<int> OnCoinsUpdate;
     public static event Action OnAutoPlayEnabled;
 
     public static SkinData CurrentSkinData { get; private set; }
 
 	public static float currentScore = 0;
-    private static float autoScore = 0;
     private static float scoreModifier = 0.1f;
 
 	private void Awake() 
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
 
         GameSetup();
         currentScore = 0;
-
+        endGame = false;
         PauseGame();
 	}
 
@@ -63,10 +64,8 @@ public class GameManager : MonoBehaviour
     {
         currentScore += coinNomValue;
 
-        if (autoPlayed && currentScore >= 500)
+        if (autoPlayed && currentScore >= 200)
         {
-			autoPlayed = false;
-
 			GameOver(true);
 		}
         else if(!autoPlayed && currentScore >= 1500)
@@ -77,9 +76,14 @@ public class GameManager : MonoBehaviour
 
 	public static void GameOver(bool isWin)
     {
-        isGameActive = false;
+		endGame = true;
+		isGameActive = false;
         autoPlayed = false;
-        GameEnded(isWin);
+
+        if(isWin)
+            GameWinned();
+        else
+            GameEnded();
     }
     
     public void PauseGame()
@@ -104,7 +108,6 @@ public class GameManager : MonoBehaviour
     public static void AutoPlay() 
     {
 		autoPlayed = true;
-        autoScore = 0;
 
         if(OnAutoPlayEnabled != null)
             OnAutoPlayEnabled();

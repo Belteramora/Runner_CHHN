@@ -15,9 +15,7 @@ public class IMoveable : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 
-		GameManager.GameEnded += StopMoving;
-		GameManager.GamePaused += StopMoving;
-		GameManager.GameResumed += ResumeMoving;
+
 
 		this.moveSpeed = moveSpeed;
 
@@ -29,10 +27,6 @@ public class IMoveable : MonoBehaviour
 		name = name + "_" + indexInPool;
 	}
 
-    public void StopMoving(bool isWin) 
-	{
-		StopMoving();
-	}
 	public void StopMoving()
 	{
 		rb.velocity = Vector2.zero;

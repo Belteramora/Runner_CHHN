@@ -7,7 +7,7 @@ using UnityEngine.Device;
 public class ScreenController : MonoBehaviour
 {
     [SerializeField]
-    private List<Screen> screens = new List<Screen>();
+    protected List<Screen> screens = new List<Screen>();
 
 	[SerializeField]
 	private Vector2 movingPos;

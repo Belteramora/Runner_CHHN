@@ -16,12 +16,22 @@ public class MoveablePool : ObjectsPool<IMoveable>
 	{
 		base.Setup();
 
+		GameManager.GameEnded += StopMoving;
+		GameManager.GamePaused += StopMoving;
+		GameManager.GameResumed += ResumeMoving;
+
+		AnimatedBuilding.OnBuildStopped += StopMoving;
+
 		for (int i = 0; i < poolSize; i++)
 		{
 			pool[i].Setup(moveSpeed, i, offsetY);
 		}
 
 		lastIndex = poolSize - 1;
+	}
+	public void StopMoving(bool isWin)
+	{
+		StopMoving();
 	}
 
 	public void StopMoving()

@@ -51,6 +51,11 @@
       "en": "Start at zero score points"
     },
     {
+      "name": "GameOverText",
+      "ru": "Игра окончена",
+      "en": "Game Over"
+    },
+    {
       "name": "EnterPasswordText",
       "ru": "Введите пароль доступа",
       "en": "Enter access password"

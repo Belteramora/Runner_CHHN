@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
@@ -40,6 +41,8 @@ public class PlayerController : MonoBehaviour
 		GameManager.GamePaused += StopAnimation;
 		GameManager.GameResumed += ResumeAnimation;
 		GameManager.GameEnded += StopAnimation;
+
+        AnimatedBuilding.OnBuildStopped += RunToBuilding;
 
 		rb2d = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
@@ -164,6 +167,9 @@ public class PlayerController : MonoBehaviour
         isInvincible = false;
     }
 
-
+    public void RunToBuilding()
+    {
+        transform.DOMoveX(25f, 5f);
+    }
 
 }

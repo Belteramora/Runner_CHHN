@@ -176,3 +176,4 @@ MonoBehaviour:
   obstaclePrefabs:
   - {fileID: 5701388391600360459, guid: b8221f7747aa041318dad3100d38f28d, type: 3}
   - {fileID: 6740984339012575744, guid: 2e6f19e5fde003a46a5e464685a1dac4, type: 3}
+  winTriggerPrefab: {fileID: 7184755617303489438, guid: f2471404d9caa6648b519e081cef1f50, type: 3}
