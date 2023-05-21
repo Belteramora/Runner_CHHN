@@ -72,13 +72,16 @@ public class GameManager : MonoBehaviour
     {
         currentScore += coinNomValue;
 
-        if (autoPlayed && currentScore >= Instance.scoreToAutoPlay)
+        if (!endGame)
         {
-			GameOver(true);
-		}
-        else if(!autoPlayed && currentScore >= Instance.scoreToUsualPlay)
-        {
-            GameOver(true);
+            if (autoPlayed && currentScore >= Instance.scoreToAutoPlay)
+            {
+                GameOver(true);
+            }
+            else if (!autoPlayed && currentScore >= Instance.scoreToUsualPlay)
+            {
+                GameOver(true);
+            }
         }
     }
 
