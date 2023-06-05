@@ -128,20 +128,24 @@ public class PlayerController : MonoBehaviour
 
     public void BeDamaged()
     {
-        if (!isInvincible)
+        if(maximumHP > 0)
         {
-            currentHP--;
+			if (!isInvincible)
+			{
+				currentHP--;
 
-            animator.SetTrigger("beDamaged");
+				animator.SetTrigger("beDamaged");
 
-            OnLoseHP(currentHP);
+				OnLoseHP(currentHP);
 
-            if (currentHP <= 0)
-            {
-                animator.SetTrigger("death");
-                GameManager.GameOver(false);
-            }
-        }
+				if (currentHP <= 0)
+				{
+					animator.SetTrigger("death");
+					GameManager.GameOver(false);
+				}
+			}
+		}
+        
     }
 
     public void Flying(float coctailYPosition)
