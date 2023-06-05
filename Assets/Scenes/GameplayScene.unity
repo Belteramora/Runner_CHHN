@@ -8062,7 +8062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: {x: 0, y: 7}
   groundCheckDistance: 0.1
-  maximumHP: 3
+  maximumHP: 0
   inSlide: 0
 --- !u!50 &1762416302
 Rigidbody2D:

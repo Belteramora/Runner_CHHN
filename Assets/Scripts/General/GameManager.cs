@@ -40,17 +40,10 @@ public class GameManager : MonoBehaviour
 	private void Awake() 
 	{
         Instance = this;
-        GameSetup = null;
-        GamePaused = null;
-        GameResumed = null;
-        GameEnded = null;
-        OnCoinsUpdate = null;
-        OnAutoPlayEnabled = null;
-}
+    }
 
 	private void Start()
 	{
-
         GameSetup();
         currentScore = 0;
         endGame = false;
@@ -125,6 +118,15 @@ public class GameManager : MonoBehaviour
             OnAutoPlayEnabled();
 	}
 
+	private void OnDestroy()
+	{
+		GameSetup = null;
+		GamePaused = null;
+		GameResumed = null;
+		GameEnded = null;
+		OnCoinsUpdate = null;
+		OnAutoPlayEnabled = null;
+	}
 }
 
 

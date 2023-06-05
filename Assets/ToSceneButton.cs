@@ -11,7 +11,6 @@ public class ToSceneButton : AnimatedButton
 	protected override void OnButtonAnimComplete()
 	{
 		base.OnButtonAnimComplete();
-
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 	}
 }

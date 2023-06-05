@@ -5,6 +5,7 @@ using DG.Tweening;
 using System;
 
 public class AnimatedBuilding : MonoBehaviour
+
 {
     public static event Action OnBuildStopped;
     public static event Action OnPlayerGoToDoor;
@@ -17,6 +18,12 @@ public class AnimatedBuilding : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-6f, 0);
+    }
+
+    public static void ResetEvent()
+    {
+        OnBuildStopped = null;
+        OnPlayerGoToDoor = null;
     }
 
 

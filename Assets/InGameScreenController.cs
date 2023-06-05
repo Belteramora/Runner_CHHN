@@ -12,6 +12,7 @@ public class InGameScreenController : ScreenController
 	private void Start()
 	{
 		AnimatedBuilding.OnPlayerGoToDoor += OnGameWinned;
+		WinTrigger.ResetEvent();
 		WinTrigger.onWinTriggerEnter += OnWinTriggerEnter;
 
 		GameManager.GameEnded += OnDeath;
@@ -29,16 +30,21 @@ public class InGameScreenController : ScreenController
 	public void OnGameWinned()
 	{
 		OutFadeBackground();
-		OutFadeAndMove(screens[0]);
+		GetScreens();
+		Screen screen = screens.Find((x) => { return x.name == "FinishScreen"; });
+		OutFadeAndMove(screen);
+
 	}
 
 	public void OnWinTriggerEnter()
 	{
-		InFadeAndMove(screens[1]);
+		GetScreens();
+		InFadeAndMove(screens.Find((x) => { return x.name == "InGameScreen"; }));
 	}
 
 	public void OnDeath()
 	{
+		GetScreens();
 		InFadeAndMove(screens[1]);
 		OutFadeAndMove(screens[2]);
 		OutFadeBackground();

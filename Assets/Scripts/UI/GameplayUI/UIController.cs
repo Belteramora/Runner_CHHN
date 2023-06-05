@@ -28,8 +28,6 @@ public class UIController : MonoBehaviour
 
 	public void OnLoseHP(int currentHP)
     {
-        Debug.Log("UIController OnLoseHP");
-
         HPContainer.OnLoseHP(currentHP);
     }
 

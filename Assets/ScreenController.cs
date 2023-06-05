@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Device;
+using UnityEngine;
 
 public class ScreenController : MonoBehaviour
 {
-    [SerializeField]
-    protected List<Screen> screens = new List<Screen>();
+	protected List<Screen> screens = new List<Screen>();
 
 	[SerializeField]
 	private Vector2 movingPos;
@@ -15,6 +14,20 @@ public class ScreenController : MonoBehaviour
 	[SerializeField]
 	protected float menuTrasitionDuration;
 
+	protected void Start()
+	{
+		GetScreens();
+	}
+
+	protected void GetScreens()
+	{
+		foreach(Transform t in transform)
+		{
+			if(t.TryGetComponent<Screen>(out Screen screen))
+				screens.Add(screen);
+
+		}
+	}
 
 	public void InFadeAndMove(Screen screen)
     {
@@ -42,5 +55,10 @@ public class ScreenController : MonoBehaviour
 	{
 		targetTransform.anchoredPosition = startValue;
 		targetTransform.DOAnchorPos(endValue, menuTrasitionDuration).SetDelay(0.2f);
+	}
+
+	private void OnDestroy()
+	{
+		screens = null;
 	}
 }

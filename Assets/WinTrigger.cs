@@ -18,7 +18,8 @@ public class WinTrigger : MonoBehaviour
 			if (collision.CompareTag("Player"))
 			{
 				//TODO: добавить скрытие игрового UI
-				onWinTriggerEnter();
+				if(onWinTriggerEnter != null)
+					onWinTriggerEnter();
 				GameManager.isGameActive = false;
 
 				Instantiate(barPrefab);
@@ -27,7 +28,7 @@ public class WinTrigger : MonoBehaviour
 		}
 	}
 
-	private void OnDestroy()
+	public static void ResetEvent()
 	{
 		onWinTriggerEnter = null;
 	}

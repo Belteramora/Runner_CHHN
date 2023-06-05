@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake()
 	{
+        AnimatedBuilding.ResetEvent();
 		GameManager.GamePaused += StopAnimation;
 		GameManager.GameResumed += ResumeAnimation;
 		GameManager.GameEnded += StopAnimation;
@@ -56,8 +57,6 @@ public class PlayerController : MonoBehaviour
         if (GameManager.CurrentSkinData != null) 
         {
             animator.runtimeAnimatorController = GameManager.CurrentSkinData.currentSkin;
-
-            Debug.Log(transform.GetChild(1).name);
 
             transform.GetChild(1).localPosition = GameManager.CurrentSkinData.offsetPosition;
 
