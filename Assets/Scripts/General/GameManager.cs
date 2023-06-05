@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager Instance;
 
+    [Header("TESTING TOOLS")]
     [SerializeField]
     private float scoreToAutoPlay;
 
