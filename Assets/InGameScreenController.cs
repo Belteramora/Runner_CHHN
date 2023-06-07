@@ -45,8 +45,8 @@ public class InGameScreenController : ScreenController
 	public void OnDeath()
 	{
 		GetScreens();
-		InFadeAndMove(screens[1]);
-		OutFadeAndMove(screens[2]);
+		InFadeAndMove(screens.Find((x) => { return x.name == "InGameScreen"; }));
+		OutFadeAndMove(screens.Find((x) => { return x.name == "DeathScreen"; }));
 		OutFadeBackground();
 	}
 }
