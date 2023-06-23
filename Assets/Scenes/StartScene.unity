@@ -2252,7 +2252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ca156ac101e6540a1b5134d32dea7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screens: []
   movingPos: {x: 0, y: 200}
   menuTrasitionDuration: 0.3
   logo: {fileID: 1166488601}
@@ -3532,7 +3531,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1484389813
 RectTransform:
